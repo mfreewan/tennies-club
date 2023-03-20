@@ -1,0 +1,10 @@
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[user]
+	name = mfreewan
+	email = m.freewan@outlook.sa
+[core]
+	editor = code --wait
+[init]
+	defaultbranch = main
