@@ -1,0 +1,20 @@
+{% block content %}
+
+{% if forms.errors %} 
+<p>username and password is incorrect</p>
+{% endif %}
+
+{% if next %}
+    {% if user.is_authenticated  %}
+    <p> user is authenticated </p>
+    {% else %}
+    <P>user is not login </P>
+    {% endif %}
+{% endif %} 
+<form method="post" >
+{% csrf_token %}
+{{ form.as_p }}
+<input type="submit" value="Login">
+</form>    
+
+{% endblock %}
